@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>homepage</title>
+    <style>
+        #second{
+            width: 100%;
+            height: 600px;
+            background-image: url("flat-lay-burger-fries-plate-with-copyspace.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        ul li a:hover,ul li a.active{
+            color: orange;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="bg-stone-900 flex">
+    <div id="logo" class="px-4 py-4 text-xl text-amber-300 font-sans font-thin">
+        <span class="font-extrabold">H</span>unger <span class="font-extrabold">B</span>ell
+    </div>
+    
+        <ul class="flex space-x-8 text-yellow-50 px-4 py-4 ml-96 text-base ">
+            <li><a href="homepage.html" class="active">Home</a></li>
+            <li><a href="#">Stalls</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    <div class="px-3 py-3 ml-80">
+        <span class="sr-only">Search</span>
+  <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+    <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+  </span>
+  <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+    </div>
+
+    </div>
+    <div id="second" class="text-orange-300 text-4xl font-serif italic">
+        <div class="ml-40 pt-36">
+            
+            <span class="text-6xl italic">Hungry?!</span><br> Good We are here to<br> serve you
+        </div>
+    </div>
+    <div class="bg-orange-100 h-96">
+        <h1 class="text-gray-900 font-semibold italic text-3xl px-5 py-5 underline">On a mission to avoid waiting for food!</h1>
+        <p class="px-5 text-xl">Here at hunger bell you can order the food from your favourite restaurents through our website and
+            give your arrival time in the website and have the food in the restaurent without waiting.
+        </p>
+    </div>
+    <div class="bg-orange-900">
+        <h1 class="pl-[660px] text-2xl font-serif pb-5 pt-3 underline">Follow us on</h1>
+        <div class="wrapper flex space-x-20 ml-[600px]">
+            <div class="border-solid border-2 px-3 py-2 rounded-full border-black">
+                <a href="#" class="icon facebook"> 
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </div>
+            <div class="border-solid border-2 px-2 py-2 rounded-full border-black">
+                <a href="#" class="icon twitter">
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+            </div>
+            <div class="border-solid border-2 px-2 py-2 rounded-full border-black">
+                <a href="#" class="icon instagram">
+                     <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </div>
+        </div>
+        <p class="pt-5 pl-[650px] font-semibold"><a href="#">Terms And Conditions</a></p>
+        <p class="pl-[590px] pt-6 pb-5"> &copy; 2022 HungerBell, Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>
