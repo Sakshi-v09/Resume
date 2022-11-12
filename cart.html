@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Font Awesome 5.15.1 CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="p-3 bg-stone-900 md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl cursor-pointer text-amber-300 font-sans font-thin">
+            <span class="font-extrabold">H</span>unger <span class="font-extrabold">B</span>ell
+          </span>
+    
+          <span class="text-3xl text-gray-300 cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+          
+            
+          
+        </div>
+    
+        <ul class="md:flex md:items-center z-[2] md:z-auto md:static absolute bg-stone-900 text-slate-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="homepage1.html" class="text-xl hover:text-orange-400 duration-500">Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 text-orange-400">
+            <a href="stalls.html" class="text-xl hover:text-orange-400 duration-500">Stalls</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-orange-400 duration-500">About us</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="orders.html" class="text-xl hover:text-orange-400 duration-500">Orders <span class="cartno">0</span></a>
+          </li>
+          <li>
+            <a href="cart.html" class="text-xl hover:text-orange-400 duration-500">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+      </script> 
+    <div class="cart-content border border-gray-600 rounded m-5">
+        <h1 class="text-center text-2xl">Your Cart</h1>
+        <div class="cart-box flex border border-grey-500 m-2">
+            <img src="s1.webp" alt="cart-img" class="h-24 w-24 p-3">
+            <div class="detail-box p-3">
+                <div class="cart-product-title">Butter-Scotch</div>
+                <div class="cart-price">Rs.250</div>
+                <input type="number" value="1" class="cart-quantity">
+            </div>
+            <i class="bx bxs-trash-alt cart-remove p-4"></i>
+        </div>
+    </div>
+    <div class="total border border-gray-600 rounded m-5 flex">
+        <div class="total-title grow p-2 text-xl font-semibold">Total</div>
+        <div class="total-price p-2">Rs.0</div>
+    </div>
+    <button type="button" class="btn-buy bg-violet-800 text-zinc-300 rounded px-3 py-1 ml-8">Buy Now</button>
+    <script src="bag.js"></script>
+</body>
+</html>
